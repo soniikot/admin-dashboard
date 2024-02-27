@@ -1,6 +1,8 @@
 *{
-    border: 1px solid black;
+border: 1px solid black;
     margin:0;
+    padding:0;
+    font-family: roboto;
 }
 .wrapper{
     height:100vh;
@@ -12,16 +14,13 @@
 .sidebar{
     grid-column-start:1;
     grid-row: 1/5;
-    display: grid;
-    grid-template-rows: 1fr 5fr 5fr ;
-   
-   background-color: rgb(49, 144, 211);
+background-color: rgb(49, 144, 211);
    color:white;
+   display: grid;
+   justify-content: center;
+   grid-template-rows: repeat(autofill,minmax(50px,1f));
 }
 
-svg{
-    fill:white;
-}
 .header{
     grid-column:2/5;
 }
@@ -31,12 +30,20 @@ grid-column:2/5;
 grid-row:2/5;
 }
 
-ul > li {
-    margin:10px;
+ul li {
+  margin:10px;
     list-style: none;
+    padding-left:0px;
    
 }
+.menu-item,.menu-item-heading{
+    display:flex;
+}    
 
+.menu-item-heading{
+font-size: 30px;
+
+}
 .pixel {
     display: inline-block;
     background-color: #fff;
