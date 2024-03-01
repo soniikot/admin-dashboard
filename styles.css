@@ -38,6 +38,8 @@ grid-template-rows: 1fr 1fr;
 }
     
 .sidebar{
+  height:auto;
+  overflow:auto;
     grid-column-start:1;
     grid-row: 1/5;
   padding:0;
@@ -70,6 +72,8 @@ background-color: rgb(49, 144, 211);
     flex: 1 0 auto;
     align-items: center;
     gap:10px;
+
+   
 }
 button{
     border-radius: 20px;
@@ -80,7 +84,11 @@ button{
     color:white;
     padding:5px;
 }
-
+ button:hover {
+        outline-color: transparent;
+        outline-style:solid;
+        box-shadow: 0 0 0 4px #edf1fa;
+}
 
 ul, li {
   margin:10px;
@@ -121,11 +129,15 @@ input {
 
 
 .main{
+height:auto;
+overflow: auto;
     grid-column:2/5;
     grid-row:2/5;
     padding:20px;
     background-color: rgb(224, 237, 245);
-
+display:grid;
+grid-template-columns: 3fr 1fr;
+grid-template-rows: 1fr 1fr;
     p{
         font-size:12px;
         color:rgb(149, 150, 150);
@@ -136,21 +148,88 @@ input {
     margin:30px;
     display:grid;
     gap:30px;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    grid-template-rows: repeat(auto-fit,minmax(150px,1fr));
-
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
+grid-column:1/2;
 }
 
-.projects div{
+.projects>div{
+display:grid;
+grid-template-rows: 1fr 3fr 3fr;
     background-color: white;
     border-radius: 10px;
     padding:20px;
     border-left: 5px solid rgb(255, 213, 0);
 }
 
+
+.icons {
+  display:flex;
+  margin-top: auto;
+
+ justify-content: end;
+ bottom:0px;
+  
+}
+
     .main-heading{
         grid-column: 1/5;
     }
+    
+.right-side{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+}
 
+.announcements{
 
+   
+   grid-column: 2;
+ 
+
+   .announcement-item{
+    background-color: white;
+    padding:10px; 
+     
+   }
+
+   h5{
+    margin:10px;
+   }
+}
+    .trending{
+        flex: 1 0 auto;
+        font-size:12px;
+        grid-column: 2/3;
+      
+       
+       .account{ 
+        padding10px; 
+       }
+
+       h5{margin:10px;}
+    }
+
+    .trending img{
+        height:40px;
+        margin:10px;
+    }
+
+    .account{
+        display:flex;
+        align-items: center;
+    }
+
+.profile-text{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.cards{
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;
+}
   
