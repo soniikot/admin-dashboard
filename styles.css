@@ -141,7 +141,7 @@ overflow: auto;
     background-color: rgb(224, 237, 245);
 display:grid;
 grid-template-columns: 3fr 1fr;
-grid-template-rows: 1fr 1fr;
+grid-template-rows: 1fr 5fr;
     p{
         font-size:12px;
         color:rgb(149, 150, 150);
