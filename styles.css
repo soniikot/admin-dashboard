@@ -90,6 +90,9 @@ button{
         box-shadow: 0 0 0 4px #edf1fa;
 }
 
+.main-header{
+    height:1em;
+}
 ul, li {
   margin:10px;
   margin-left: 20px;
