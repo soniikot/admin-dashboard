@@ -9,13 +9,13 @@
 
 .wrapper{
     height:100vh;
-    display:grid;
+    display: grid;
     grid-template-columns: 225px 2fr 2fr 2fr ;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
 }
  
 .greeting{
-   display:grid;
+   display: grid;
    grid-template-columns: 1fr 6fr;
 grid-template-rows: 1fr 1fr;  
 }
@@ -55,6 +55,7 @@ background-color: rgb(49, 144, 211);
     display:grid;
     grid-template-columns: 3fr  1fr;
     margin:20px;
+    height:100px;
 
 }
 
