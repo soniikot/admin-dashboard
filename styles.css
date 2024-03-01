@@ -145,6 +145,10 @@ grid-template-rows: 1fr 1fr;
      
     }
 }
+
+
+.main-header{
+    height:1em;
 .projects{
     margin:30px;
     display:grid;
